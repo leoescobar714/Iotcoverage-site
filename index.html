@@ -121,6 +121,25 @@
       font-size: 0.95rem;
     }
 
+    .who-we-serve {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .who-we-serve div {
+      flex: 1 1 30%;
+      max-width: 180px;
+    }
+
+    .who-we-serve img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
     .benefits ul {
       list-style: none;
       padding-left: 0;
@@ -178,9 +197,10 @@
         margin-top: 1rem;
       }
 
-      .features {
+      .features,
+      .who-we-serve {
         flex-direction: column;
-        gap: 1.5rem;
+        align-items: center;
       }
 
       header h2 {
@@ -200,6 +220,7 @@
     <ul>
       <li><a href="#how">How It Works</a></li>
       <li><a href="#why">Why Choose Us</a></li>
+      <li><a href="#serve">Who We Serve</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -240,6 +261,18 @@
       <li>✅ Earn passive income monthly</li>
       <li>✅ Better wireless coverage for your customers</li>
     </ul>
+  </section>
+
+  <section id="serve" class="section">
+    <h2>Who We Serve</h2>
+    <div class="who-we-serve">
+      <div><img src="icons/barbershops.png" alt="Barbershops"/><p>Barbershops</p></div>
+      <div><img src="icons/coffee_shops.png" alt="Coffee Shops"/><p>Coffee Shops</p></div>
+      <div><img src="icons/gyms.png" alt="Gyms"/><p>Gyms</p></div>
+      <div><img src="icons/retail_stores.png" alt="Retail Stores"/><p>Retail Stores</p></div>
+      <div><img src="icons/medical_offices.png" alt="Medical Offices"/><p>Medical Offices</p></div>
+      <div><img src="icons/apartments.png" alt="Apartments"/><p>Apartments</p></div>
+    </div>
   </section>
 
   <section class="section">
