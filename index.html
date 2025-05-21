@@ -133,6 +133,13 @@
       align-items: center;
       justify-content: flex-start;
       height: 200px;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .who-we-serve div:hover {
+      box-shadow: 0 0 15px 3px rgba(0, 255, 0, 0.4);
+      background-color: white;
     }
 
     .who-we-serve img {
@@ -140,6 +147,11 @@
       height: 100px;
       object-fit: contain;
       margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .who-we-serve div:hover img {
+      transform: scale(1.05);
     }
 
     .benefits ul {
@@ -289,7 +301,7 @@
         <p><strong>Medical Offices</strong><br/><span style="font-size: 0.9rem;">Connectivity for staff and patients.</span></p>
       </div>
       <div>
-        <img src="icons/apart_ments_logo.png" alt="Apartments"/>
+        <img src="icons/apartments_logo.png" alt="Apartments"/>
         <p><strong>Apartments</strong><br/><span style="font-size: 0.9rem;">Better service across the building.</span></p>
       </div>
     </div>
