@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>IoT Coverage Co.</title>
 
-  <!-- AOS Animation Library -->
+  <!-- AOS Animation -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
@@ -82,64 +82,66 @@
     }
 
     .section {
-      padding: 3rem 1rem;
-      max-width: 960px;
-      margin: auto;
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 1rem;
     }
 
-    .section h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #002b5c;
-    }
-
-    .who-we-serve {
+    .split-box {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      text-align: center;
-    }
-
-    .who-we-serve div {
-      flex: 1 1 30%;
-      max-width: 180px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 200px;
-      border-radius: 12px;
-      transition: box-shadow 0.3s ease;
-    }
-
-    .who-we-serve div:hover {
-      box-shadow: 0 0 15px 3px rgba(0, 255, 0, 0.4);
       background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
     }
 
-    .who-we-serve img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 0.5rem;
-      transition: transform 0.3s ease;
+    .split-box .image,
+    .split-box .text {
+      flex: 1 1 50%;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .who-we-serve div:hover img {
-      transform: scale(1.05);
+    .split-box .image img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+    }
+
+    .split-box .text {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .split-box .text h2 {
+      color: #002b5c;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .split-box .text ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.05rem;
+      line-height: 1.8;
     }
 
     @media (max-width: 768px) {
-      nav ul {
+      .split-box {
         flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
       }
 
-      header h2 {
-        font-size: 2rem;
+      .split-box .text,
+      .split-box .image {
+        padding: 2rem 1rem;
+      }
+
+      .split-box .text {
+        align-items: center;
+        text-align: center;
       }
     }
   </style>
@@ -165,40 +167,42 @@
 
   <!-- HOW IT WORKS -->
   <section id="how" class="section" data-aos="fade-up">
-    <h2>How It Works</h2>
-    <p style="font-size: 1.05rem; margin-bottom: 1.5rem; text-align: center;">
-      We make it easy to earn passive income from your business location. Here’s how:
-    </p>
-    <ul style="list-style: none; padding-left: 0; font-size: 1.05rem; line-height: 1.8; max-width: 700px; margin: auto;">
-      <li><strong>1. We Install the Device:</strong> Our team sets up the Helium hotspot — no work needed from you.</li>
-      <li><strong>2. You Provide Power + Wi-Fi:</strong> The device uses very little electricity and bandwidth.</li>
-      <li><strong>3. You Earn Monthly Income:</strong> Get paid for helping expand the IoT network in your area.</li>
-    </ul>
-    <div style="margin-top: 2rem; display: flex; justify-content: center;">
-      <img src="images/how_it_works_cafe.png" alt="How It Works" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);" />
+    <div class="split-box">
+      <div class="image">
+        <img src="images/how_it_works_cafe.png" alt="How It Works Image" />
+      </div>
+      <div class="text">
+        <h2>How It Works</h2>
+        <ul>
+          <li><strong>1. We Install the Device:</strong> Our team sets up the Helium hotspot — no work needed from you.</li>
+          <li><strong>2. You Provide Power + Wi-Fi:</strong> The device uses very little electricity and bandwidth.</li>
+          <li><strong>3. You Earn Monthly Income:</strong> Get paid for helping expand the IoT network in your area.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
     <!-- WHY CHOOSE US -->
   <section id="why" class="section" data-aos="fade-up">
-    <h2>Why Choose Us</h2>
-    <p style="font-size: 1.05rem; margin-bottom: 1.5rem; text-align: center;">
-      IoT Coverage Co. helps businesses like yours unlock passive income with zero hassle.
-    </p>
-    <ul style="list-style: none; padding-left: 0; font-size: 1.05rem; line-height: 1.8; max-width: 700px; margin: auto;">
-      <li>✅ 100% free to install and run</li>
-      <li>✅ No technical knowledge required</li>
-      <li>✅ Monthly payouts for your location</li>
-      <li>✅ Support from a real human (Leonardo!)</li>
-    </ul>
-    <div style="margin-top: 2rem; display: flex; justify-content: center;">
-      <img src="images/why_choose_us_helium.png" alt="Why Choose Us" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);" />
+    <div class="split-box">
+      <div class="text">
+        <h2>Why Choose Us</h2>
+        <ul>
+          <li>✅ 100% free to install and run</li>
+          <li>✅ No technical knowledge required</li>
+          <li>✅ Monthly payouts for your location</li>
+          <li>✅ Support from a real human (Leonardo!)</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="images/why_choose_us_helium.png" alt="Why Choose Us Image" />
+      </div>
     </div>
   </section>
 
   <!-- WHO WE SERVE -->
   <section id="serve" class="section" data-aos="fade-up">
-    <h2>Who We Serve</h2>
+    <h2 style="text-align: center;">Who We Serve</h2>
     <div class="who-we-serve">
       <div>
         <img src="icons/barbershop_logo.png" alt="Barbershops"/>
@@ -229,24 +233,25 @@
 
     <!-- HOW YOU EARN -->
   <section class="section" data-aos="fade-up">
-    <h2>How You Earn</h2>
-    <p style="font-size: 1.05rem; margin-bottom: 1.5rem; text-align: center;">
-      Each Helium hotspot supports mobile and IoT devices in your area — and you get rewarded automatically.
-    </p>
-    <ul style="list-style: none; padding-left: 0; font-size: 1.05rem; line-height: 1.8; max-width: 700px; margin: auto;">
-      <li>💼 We install the hotspot — no cost to you</li>
-      <li>📡 It runs quietly in the background</li>
-      <li>📶 Your location boosts network coverage</li>
-      <li>💸 You receive a share of monthly earnings</li>
-    </ul>
-    <div style="margin-top: 2rem; display: flex; justify-content: center;">
-      <img src="images/how_you_earn_illustration.png" alt="How You Earn Image" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.1);" />
+    <div class="split-box">
+      <div class="image">
+        <img src="images/how_you_earn_illustration.png" alt="How You Earn Image" />
+      </div>
+      <div class="text">
+        <h2>How You Earn</h2>
+        <ul>
+          <li>💼 We install the hotspot — no cost to you</li>
+          <li>📡 It runs quietly in the background</li>
+          <li>📶 Your location boosts network coverage</li>
+          <li>💸 You receive a share of monthly earnings</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- PRIVACY COMES FIRST -->
   <section class="section" data-aos="fade-up">
-    <h2>Your Privacy Comes First</h2>
+    <h2 style="text-align: center;">Your Privacy Comes First</h2>
     <p style="max-width: 700px; margin: auto; font-size: 1.05rem; text-align: center;">
       We take your privacy seriously. The Helium hotspot does <strong>not</strong> access, store, or sell your business’s internet data.
       <br/><br/>
@@ -268,8 +273,6 @@
 
   <!-- FOOTER -->
   <footer>
-    <p><strong>Leonardo Escobar</strong></p>
-    <p>📞 657-615-5162</p>
     <p>📧 leonardoescobar236@gmail.com</p>
     <p>&copy; 2025 IoT Coverage Co.</p>
   </footer>
