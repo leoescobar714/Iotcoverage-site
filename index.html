@@ -10,6 +10,42 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <style>
+    .who-we-serve {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.who-we-serve div {
+  flex: 1 1 30%;
+  max-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 200px;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.who-we-serve div:hover {
+  box-shadow: 0 0 15px 3px rgba(0, 255, 0, 0.4);
+  background-color: white;
+}
+
+.who-we-serve img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.who-we-serve div:hover img {
+  transform: scale(1.05);
+}
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
