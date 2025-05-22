@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | IoT Coverage Co.</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #002b5c;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #007ACC;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005f99;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .back-link a {
+      color: #007ACC;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 4rem;
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’re here to answer your questions and help you get started.</p>
+  </header>
+
+  <div class="container">
+    <form action="https://formspree.io/f/xqaqjoad" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="business" placeholder="Business Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="back-link">
+      <a href="index.html">&larr; Back to Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Leonardo Escobar</strong></p>
+    <p>📞 657-615-5162</p>
+    <p>📧 leonardoescobar236@gmail.com</p>
+    <p>&copy; 2025 IoT Coverage Co.</p>
+  </footer>
+
+</body>
+</html>
