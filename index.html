@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>IoT Coverage Co.</title>
 
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
   <style>
     body {
       margin: 0;
@@ -153,14 +157,14 @@
     </ul>
   </nav>
 
-  <header>
+  <header data-aos="fade-in">
     <h2>Get Paid to Improve Mobile Coverage</h2>
     <p>We install Helium hotspots at no cost to you — and you earn passive income.</p>
     <a href="contact.html" class="cta-btn">See If Your Location Qualifies</a>
   </header>
 
   <!-- HOW IT WORKS -->
-  <section id="how" class="section">
+  <section id="how" class="section" data-aos="fade-up">
     <h2>How It Works</h2>
     <p style="font-size: 1.05rem; margin-bottom: 1.5rem; text-align: center;">
       We make it easy to earn passive income from your business location. Here’s how:
@@ -176,7 +180,7 @@
   </section>
 
     <!-- WHY CHOOSE US -->
-  <section id="why" class="section">
+  <section id="why" class="section" data-aos="fade-up">
     <h2>Why Choose Us</h2>
     <p style="font-size: 1.05rem; margin-bottom: 1.5rem; text-align: center;">
       IoT Coverage Co. helps businesses like yours unlock passive income with zero hassle.
@@ -193,7 +197,7 @@
   </section>
 
   <!-- WHO WE SERVE -->
-  <section id="serve" class="section">
+  <section id="serve" class="section" data-aos="fade-up">
     <h2>Who We Serve</h2>
     <div class="who-we-serve">
       <div>
@@ -224,7 +228,7 @@
   </section>
 
     <!-- HOW YOU EARN -->
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>How You Earn</h2>
     <p style="font-size: 1.05rem; margin-bottom: 1.5rem; text-align: center;">
       Each Helium hotspot supports mobile and IoT devices in your area — and you get rewarded automatically.
@@ -241,7 +245,7 @@
   </section>
 
   <!-- PRIVACY COMES FIRST -->
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Your Privacy Comes First</h2>
     <p style="max-width: 700px; margin: auto; font-size: 1.05rem; text-align: center;">
       We take your privacy seriously. The Helium hotspot does <strong>not</strong> access, store, or sell your business’s internet data.
@@ -251,7 +255,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section" style="background-color: #f1f5f9; border-radius: 12px; padding: 3rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+  <section id="faq" class="section" style="background-color: #f1f5f9; border-radius: 12px; padding: 3rem 2rem; box-shadow: 0 2px 12px rgba(0,0,0,0.05);" data-aos="fade-up">
     <h2 style="text-align: center; color: #002b5c;">Frequently Asked Questions</h2>
     <div style="max-width: 700px; margin: auto; font-size: 1.05rem; color: #333;">
       <p><strong>Q: Does it cost me anything?</strong><br/>A: Nope — it's 100% free. We provide and install everything.</p>
@@ -269,6 +273,14 @@
     <p>📧 leonardoescobar236@gmail.com</p>
     <p>&copy; 2025 IoT Coverage Co.</p>
   </footer>
+
+  <!-- AOS INIT -->
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 
 </body>
 </html>
